@@ -244,16 +244,17 @@ button:hover {
     #carbon-neutral { 
         position: static; 
         margin: 0;
-        margin-top: 10px;  
+        margin-top: 1vh;  
     }
     #footer-left {
         position: absolute;
-        top: 9.5vh;  
+        top: 9vh;  
         margin: 0;
         margin-top: 5px; 
     }
     #footer-right { 
-        position: static;
+        position: absolute;
+        top: 5vh;
         margin: 0;  
         margin-top: 5px; 
     }
