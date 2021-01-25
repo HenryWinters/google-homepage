@@ -177,7 +177,7 @@ button:hover {
     height: 6vh; 
     display: flex; 
     flex-direction: row; 
-    justify-content: space-between; 
+    justify-content: flex-start; 
     align-items: center; 
     font-size: 13px; 
     background: #f2f2f2;
@@ -189,7 +189,6 @@ button:hover {
     display: flex; 
     flex-direction: row;
     list-style-type: none; 
-    flex-grow: 1; 
 }
 
 #footer-left li { 
@@ -198,8 +197,10 @@ button:hover {
 
 #carbon-neutral { 
     display: flex;
-    align-items: center; 
-    flex-grow: 1;
+    align-items: center;  
+    position: absolute; 
+    left: 45vw; 
+    white-space: nowrap;  
 }
 
 #carbon-neutral img { 
@@ -212,7 +213,8 @@ button:hover {
 #footer-right { 
     display: flex;
     list-style-type: none;
-    flex-grow: 1;
+    margin-left: auto;
+    margin-right: 20px;  
 }
 
 #footer-right li { 
@@ -227,5 +229,35 @@ button:hover {
     text-decoration: none; 
     color: rgba(104, 100, 100, 0.87);
 }
+
+@media only screen and (max-width: 1000px) {
+    #search-bar { 
+        width: 58vw;
+    } 
+    #search-bar input { 
+        width: 45vw; 
+    }
+    #footer { 
+        flex-direction: column;
+        height: 15vh; 
+    }
+    #carbon-neutral { 
+        position: static; 
+        margin: 0;
+        margin-top: 10px;  
+    }
+    #footer-left {
+        position: absolute;
+        top: 9.5vh;  
+        margin: 0;
+        margin-top: 5px; 
+    }
+    #footer-right { 
+        position: static;
+        margin: 0;  
+        margin-top: 5px; 
+    }
+}
+
 
 /* end of footer */
